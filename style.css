@@ -1,0 +1,180 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #263238;
+}
+
+header {
+  background: #12345a;
+  color: white;
+  padding: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 45px;
+}
+
+header h1 {
+  font-size: 27px;
+}
+
+nav {
+  background: #087e8b;
+  padding: 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffe082;
+}
+
+.hero {
+  min-height: 420px;
+  background: linear-gradient(
+    120deg, #12345acc, #087e8bcc
+  ), url("https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #ffc857;
+  color: #12345a;
+  padding: 13px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 30px;
+  color: #12345a;
+  margin-bottom: 25px;
+}
+
+.section > p {
+  line-height: 1.8;
+}
+
+.light {
+  background: #edf6f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #00000015;
+  font-size: 35px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #087e8b;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.gallery div {
+  background: #edf6f8;
+  padding: 30px;
+  border-radius: 12px;
+  font-size: 40px;
+  min-width: 180px;
+}
+
+.gallery p {
+  font-size: 17px;
+  margin-top: 12px;
+}
+
+footer {
+  background: #12345a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  line-height: 2;
+}
+
+@media(max-width: 700px) {
+  header h1 {
+    font-size: 19px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
